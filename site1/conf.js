@@ -10,7 +10,7 @@ exports.config = {
   // Spec patterns are relative to the location of the spec file. They may
   // include glob patterns.
   suites: {
-    homepage: 'tests/e2e/homepage/AngularHomepage/AngularHomepaeg_Spec.js',
+    homepage: 'tests/e2e/homepage/AngularHomepage/AngularHomepage_Spec.js',
     //search: ['tests/e2e/contact_search/**/*Spec.js','tests/e2e/venue_search/**/*Spec.js']
   },
 
