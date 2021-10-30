@@ -1,0 +1,21 @@
+Verify_all_elements.js - Verifies all elements of login page and registration page
+
+registration.js - Registers a new user 
+
+login.js - logins the registered user
+
+home.js - created users should display and logout option should be there
+
+positive_userpath.js - 
+  TC001 - Register User A
+  TC002 - Register User B
+  TC003 - Login with User A
+  TC004 - Login with User B
+  
+negative_userpath.js -
+  TC001 - Register using wrong input
+  TC002 - Register user A
+  TC003 - Login using invalid credential
+  TC004 - Login with User A
+  TC005 - Delete an User A in home page
+  TC006 - Try to login with user A
