@@ -42,7 +42,7 @@ exports.config = {
          'browserName': 'firefox'
         },
 
-    ], maxSessions: -1,
+    ], maxSessions: -1, //change to 1 if want to run one after another
 
     framework: 'jasmine',
 
