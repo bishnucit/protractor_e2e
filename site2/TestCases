@@ -1,6 +1,10 @@
 Verify_all_elements.js - Verifies all elements of login page and registration page
 
 registration.js - Registers a new user 
+  TC001 - No Input Registration
+  TC002 - Wrong Input Registration
+  TC003 - Correct Input Registration and Register
+  TC004 - Correct Input Registration and Cancel
 
 login.js - logins the registered user
 
