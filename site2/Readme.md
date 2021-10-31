@@ -4,5 +4,5 @@ Extract the zip open the folder in cmd prompt and run npm install and then run n
 
 protractor conf/conf.js to run the tests
 
-To generate report after test is executed install html reporter using : 
-npm i protractor-html-reporter-2
+To generate report after test is executed install html reporter in the test folder using : 
+npm i --save-dev protractor-html-reporter-2
