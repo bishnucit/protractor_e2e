@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="7" time="41.018">
+ <testsuite name="Verify Elements of Login and Register page" timestamp="2021-10-31T09:33:46" hostname="localhost" time="13.831" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="Verify Elements of Login and Register page" name="titleCheck" time="5.029" />
+  <testcase classname="Verify Elements of Login and Register page" name="login page check" time="3.276" />
+  <testcase classname="Verify Elements of Login and Register page" name="register page check" time="5.525" />
+ </testsuite>
+ <testsuite name="Registration page test cases" timestamp="2021-10-31T09:34:00" hostname="localhost" time="27.187" errors="0" tests="4" skipped="0" disabled="0" failures="0">
+  <testcase classname="Registration page test cases" name="TC001 - No Input Registration" time="5.586" />
+  <testcase classname="Registration page test cases" name="TC002 - Partial Input Registration" time="5.68" />
+  <testcase classname="Registration page test cases" name="TC003 - Correct Input Registration and Register" time="8.135" />
+  <testcase classname="Registration page test cases" name="TC004 - Correct Input Registration and Cancel" time="7.784" />
+ </testsuite>
+</testsuites>
