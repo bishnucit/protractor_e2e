@@ -2,7 +2,7 @@ Verify_all_elements.js - Verifies all elements of login page and registration pa
 
 registration.js - Registers a new user 
   TC001 - No Input Registration
-  TC002 - Wrong Input Registration
+  TC002 - Partial Input Registration
   TC003 - Correct Input Registration and Register
   TC004 - Correct Input Registration and Cancel
 
