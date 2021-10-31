@@ -2,7 +2,7 @@
 //Extract and npm install and then npm start to start the application
 
 
-describe("verifyElements", function(){
+describe("Verify Elements of Login and Register page", function(){
     it("titleCheck", function(){
         browser.get('http://localhost:8080/login');
         browser.manage().window().maximize();
