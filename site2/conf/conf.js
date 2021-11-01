@@ -46,7 +46,7 @@ exports.config = {
 
     framework: 'jasmine',
 
-    specs: ['..//testcases//verify_all_elements.js','..//testcases//registration.js'],
+    specs: ['..//testcases//verify_all_elements.js','..//testcases//registration.js', '..//testcases//login.js'],
 
     jasmineNodeOpts: {
         defaultTimeoutInterval: 30000
