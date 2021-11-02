@@ -7,6 +7,8 @@ registration.js - Registers a new user
   TC004 - Correct Input Registration and Cancel
 
 login.js - logins the registered user
+  TC001 - Login the registered user
+  TC002 - Logout the user and relogin the same user
 
 home.js - created users should display and logout option should be there
 
