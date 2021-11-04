@@ -1,3 +1,5 @@
+INPUT - Test cases for SITE AUTOMATION
+
 Verify_all_elements.js - Verifies all elements of login page and registration page
 
 registration.js - Registers a new user 
