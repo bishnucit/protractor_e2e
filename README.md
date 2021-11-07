@@ -10,7 +10,7 @@ webdriver-manager update
 ---------------------------------------------------------------------------------------------------------------------------
 site 1 - Angular website
 ---------------------------------------------------------------------------------------------------------------------------
-site 2 - Angular 8 application - https://github.com/cornflourblue/angular-8-registration-login-example
+site 2 - Angular 8 application - Angular 8 User Registration and Login Example
 ---------------------------------------------------------------------------------------------------------------------------
-site 3 - Conduit application - https://github.com/gothinkster/angular-realworld-example-app
+site 3 - Conduit application - Medium.com clone powered by React, Angular, Node, Django, and many more
 ---------------------------------------------------------------------------------------------------------------------------
