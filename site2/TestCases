@@ -26,8 +26,7 @@ negative_userpath.js -
   TC001 - Register using wrong input
   TC002 - Register user A
   TC003 - Login using invalid credential
-  TC004 - Login with User A
-  TC005 - Delete an User A in home page
-  TC006 - Try to login with user A
+  TC004 - Login with User A and Delete User A and logout
+  TC005 - Try to login with user A
 
 OUTPUT - https://pasteboard.co/arCbvFaoXZpC.png
