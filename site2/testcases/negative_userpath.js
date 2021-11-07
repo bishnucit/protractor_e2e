@@ -1,4 +1,4 @@
-describe("created users should display and logout option should be there", function(){
+describe("create user and try login with invalid credential and then delete all users after success login", function(){
 
     var today = new Date().getTime();
 
