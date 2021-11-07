@@ -10,7 +10,7 @@ webdriver-manager update
 ---------------------------------------------------------------------------------------------------------------------------
 site 1 - Angular website
 ---------------------------------------------------------------------------------------------------------------------------
-site 2 - Angular 8 application - runs in 2 browser (chrome/firefox) at a time
+site 2 - Angular 8 application - https://github.com/cornflourblue/angular-8-registration-login-example
 ---------------------------------------------------------------------------------------------------------------------------
 site 3 - Conduit application - https://github.com/gothinkster/angular-realworld-example-app
 ---------------------------------------------------------------------------------------------------------------------------
