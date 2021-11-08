@@ -2,6 +2,8 @@
 
 SCENARIO - Verify elements of each page in the application
 
+Pre condition - Register a user and make a post and a comment
+
   TC001 - Home page (URL: /#/ )
     - List of tags
     - List of articles pulled from either Feed, Global, or by Tag
