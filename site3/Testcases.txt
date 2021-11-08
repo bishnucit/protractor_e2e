@@ -1,0 +1,26 @@
+
+
+SCENARIO - Verify elements of each page in the application
+
+  TC001 - Home page (URL: /#/ )
+    - List of tags
+    - List of articles pulled from either Feed, Global, or by Tag
+    - Pagination for list of articles
+    
+  TC002 - Sign in/Sign up pages (URL: /#/login, /#/register )
+    - Uses JWT (store the token in localStorage)
+    - Authentication can be easily switched to session/cookie based
+    
+  TC003 - Settings page (URL: /#/settings )
+
+  TC004 - Editor page to create/edit articles (URL: /#/editor, /#/editor/article-slug-here )
+  
+  TC005 - Article page (URL: /#/article/article-slug-here )
+    - Delete article button (only shown to article's author)
+    - Render markdown from server client side
+    - Comments section at bottom of page
+    - Delete comment button (only shown to comment's author)
+  
+  TC006 - Profile page (URL: /#/profile/:username, /#/profile/:username/favorites )
+    - Show basic user info
+    -  List of articles populated from author's created articles or author's favorited articles
