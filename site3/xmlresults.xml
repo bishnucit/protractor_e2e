@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="2" time="25.449">
+ <testsuite name="Verify everything" timestamp="2021-11-10T15:04:29" hostname="localhost" time="25.449" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="Verify everything" name="TC001 - Register a user" time="13.681" />
+  <testcase classname="Verify everything" name="TC001 - Login with the registered user" time="11.767" />
+ </testsuite>
+</testsuites>
