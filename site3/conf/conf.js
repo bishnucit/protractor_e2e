@@ -46,7 +46,7 @@ exports.config = {
 
     framework: 'jasmine',
 
-    specs: ['..//tests//verify_elements.js',
+    specs: ['..//tests//basic_checks.js',
 
             ],
 
