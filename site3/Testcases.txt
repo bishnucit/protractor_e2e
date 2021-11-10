@@ -1,28 +1,37 @@
 
 
-SCENARIO - Verify elements of each page in the application
+Feature List to be tested:
 
-Pre condition - Register a user and make a post and a comment
-
-  TC001 - Home page (URL: /#/ )
+  Features 01 - Home page (URL: /#/ )
     - List of tags
     - List of articles pulled from either Feed, Global, or by Tag
     - Pagination for list of articles
     
-  TC002 - Sign in/Sign up pages (URL: /#/login, /#/register )
+  Features 02 - Sign in/Sign up pages (URL: /#/login, /#/register )
     - Uses JWT (store the token in localStorage)
     - Authentication can be easily switched to session/cookie based
     
-  TC003 - Settings page (URL: /#/settings )
+  Features 03 - Settings page (URL: /#/settings )
 
-  TC004 - Editor page to create/edit articles (URL: /#/editor, /#/editor/article-slug-here )
+  Features 04 - Editor page to create/edit articles (URL: /#/editor, /#/editor/article-slug-here )
   
-  TC005 - Article page (URL: /#/article/article-slug-here )
+  Features 05 - Article page (URL: /#/article/article-slug-here )
     - Delete article button (only shown to article's author)
     - Render markdown from server client side
     - Comments section at bottom of page
     - Delete comment button (only shown to comment's author)
   
-  TC006 - Profile page (URL: /#/profile/:username, /#/profile/:username/favorites )
+  Features 06 - Profile page (URL: /#/profile/:username, /#/profile/:username/favorites )
     - Show basic user info
     -  List of articles populated from author's created articles or author's favorited articles
+    
+    
+    
+  Test cases - 
+  
+  Verify_everything.js
+  TC001 - Register a new user
+  TC002 - Login with the registered user
+  
+  Output - https://pasteboard.co/9q8PWBabiNn2.png
+  
