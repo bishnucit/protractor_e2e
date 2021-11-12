@@ -32,6 +32,8 @@ Feature List to be tested:
   Verify_everything.js
   TC001 - Register a new user
   TC002 - Login with the registered user
+  TC003 - Login with the registered user and create a new article
+  TC004 - Login with the registered user and update your settings
   
-  Output - https://pasteboard.co/9q8PWBabiNn2.png
+  Output - https://pasteboard.co/SHUMmvvtNUT3.png
   
