@@ -11,7 +11,8 @@ describe("Verify everything", function(){
     });
 
     it("TC001 - Register a new user", function(){
-        element(by.partialLinkText('Sign up')).click();
+        //element(by.partialLinkText('Sign up')).click();
+        element(by.css('a[href="/register"]')).click();
         browser.sleep(1000);
         element(by.xpath('/html/body/app-root/app-auth-page/div/div/div/div/form/fieldset/fieldset[1]/input')).sendKeys('tester1' + today);
         element(by.xpath('/html/body/app-root/app-auth-page/div/div/div/div/form/fieldset/fieldset[2]/input')).sendKeys('tester1_'+ today + '@mailinator.com');
@@ -68,6 +69,13 @@ describe("Verify everything", function(){
         element(by.xpath('/html/body/app-root/app-editor-page/div/div/div/div/form/fieldset/fieldset[1]/input')).sendKeys('article_title_' + today);
         element(by.xpath('/html/body/app-root/app-editor-page/div/div/div/div/form/fieldset/fieldset[2]/input')).sendKeys('test1');
         element(by.xpath('/html/body/app-root/app-editor-page/div/div/div/div/form/fieldset/fieldset[3]/textarea')).sendKeys('article_description_sample_text');
+        element(by.xpath('/html/body/app-root/app-editor-page/div/div/div/div/form/fieldset/fieldset[4]/input')).sendKeys('#protractor');
+        browser.sleep(1000);
+        element(by.xpath('/html/body/app-root/app-editor-page/div/div/div/div/form/fieldset/fieldset[4]/input')).click();
+        browser.sleep(1000);
+        element(by.xpath('/html/body/app-root/app-editor-page/div/div/div/div/form/fieldset/fieldset[4]/input')).sendKeys(protractor.Key.ENTER);
+
+
         browser.sleep(1000);
         element(by.buttonText('Publish Article')).click();
         browser.sleep(5000);
@@ -111,5 +119,4 @@ describe("Verify everything", function(){
         expect(element(by.xpath('/html/body/app-root/app-layout-header/nav/div/ul/li[3]/a')).isDisplayed());
 
     });
-
 });
