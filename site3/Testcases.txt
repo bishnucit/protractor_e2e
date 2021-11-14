@@ -29,11 +29,13 @@ Feature List to be tested:
     
   Test cases - 
   
+  [e2e]
   Verify_everything.js
   TC001 - Register a new user
   TC002 - Login with the registered user
   TC003 - Login with the registered user and create a new article
   TC004 - Login with the registered user and update your settings
+  TC005 - Verify the created article is visible under global feed and click on profile to check the profile
   
-  Output - https://pasteboard.co/SHUMmvvtNUT3.png
+  Output - https://pasteboard.co/MSh4CwNjOIXp.png
   
