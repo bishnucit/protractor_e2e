@@ -37,5 +37,5 @@ Feature List to be tested:
   TC004 - Login with the registered user and update your settings
   TC005 - Verify the created article is visible under global feed and click on profile to check the profile
   
-  Output - https://pasteboard.co/MSh4CwNjOIXp.png
+  Output - https://pasteboard.co/CZVnar7VeoXq.png
   
