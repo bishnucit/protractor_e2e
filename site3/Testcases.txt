@@ -36,6 +36,7 @@ Feature List to be tested:
   TC003 - Login with the registered user and create a new article
   TC004 - Login with the registered user and update your settings
   TC005 - Verify the created article is visible under global feed and click on profile to check the profile
+  TC006 - Verify the created article is visible under global feed and click on article and comment on it and then delete it
   
   Output - https://pasteboard.co/CZVnar7VeoXq.png
   
