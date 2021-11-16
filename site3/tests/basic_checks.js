@@ -149,4 +149,37 @@ describe("Verify everything", function(){
         browser.sleep(2000);
         expect(element(by.xpath('/html/body/app-root/app-layout-header/nav/div/ul/li[3]/a')).isDisplayed());
     });
+    
+    it("TC006 - Verify the created article is visible under global feed and click on article and comment on it and then delete it", function(){
+        element(by.partialLinkText('Sign in')).click();
+        browser.sleep(1000);
+        element(by.xpath('/html/body/app-root/app-auth-page/div/div/div/div/form/fieldset/fieldset[2]/input')).sendKeys('tester1_'+ today + '@mailinator.com');
+        element(by.xpath('/html/body/app-root/app-auth-page/div/div/div/div/form/fieldset/fieldset[3]/input')).sendKeys('Passw0rd123');
+        browser.sleep(1000).then(function(){
+            signin_button = element(by.buttonText('Sign in'))
+            expect(signin_button.isEnabled());
+            signin_button.click();
+            browser.sleep(2000);
+            expect(element(by.xpath('/html/body/app-root/app-layout-header/nav/div/ul/li[2]/a')).isDisplayed());
+        });
+
+        var username = "/profile/username1_"+today;
+        //var article = "/article/article_title_"+today+"-258";
+        element(by.xpath('/html/body/app-root/app-home-page/div/div/div/div[1]/div/ul/li[2]/a')).click();
+        browser.sleep(5000);
+        expect(element(by.css('a[href="'+ username +'"]')).isDisplayed());
+        element(by.css('.preview-link')).click();
+        browser.sleep(5000);
+        element(by.xpath('/html/body/app-root/app-article-page/div/div[2]/div[3]/div/div/form/fieldset/div[1]/textarea')).sendKeys('comment1');
+        element(by.css('.btn-primary')).click();
+        browser.sleep(3000);
+        expect(element(by.css('.ion-trash-a')).isDisplayed());
+        element(by.css('.mod-options>.ion-trash-a')).click();
+        browser.sleep(2000);
+        element(by.xpath('/html/body/app-root/app-layout-header/nav/div/ul/li[3]/a')).click();
+        browser.sleep(3000);
+        element(by.css('.btn.btn-outline-danger')).click();
+        browser.sleep(2000);
+        expect(element(by.xpath('/html/body/app-root/app-layout-header/nav/div/ul/li[3]/a')).isDisplayed());
+    });
 });
