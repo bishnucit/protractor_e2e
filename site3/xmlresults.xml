@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="2" time="25.449">
- <testsuite name="Verify everything" timestamp="2021-11-10T15:04:29" hostname="localhost" time="25.449" errors="0" tests="2" skipped="0" disabled="0" failures="0">
-  <testcase classname="Verify everything" name="TC001 - Register a user" time="13.681" />
-  <testcase classname="Verify everything" name="TC001 - Login with the registered user" time="11.767" />
+<testsuites disabled="0" errors="0" failures="0" tests="7" time="136.795">
+ <testsuite name="Verify everything" timestamp="2021-11-15T19:27:41" hostname="localhost" time="136.795" errors="0" tests="7" skipped="0" disabled="0" failures="0">
+  <testcase classname="Verify everything" name="TC001 - Register a new user" time="14.941" />
+  <testcase classname="Verify everything" name="TC002 - Login with the registered user" time="11.74" />
+  <testcase classname="Verify everything" name="TC003 - Login with the registered user and create a new article" time="20.49" />
+  <testcase classname="Verify everything" name="TC004 - Login with the registered user and update your settings" time="20.372" />
+  <testcase classname="Verify everything" name="TC005 - Verify the created article is visible under global feed and click on profile to check the profile" time="16.985" />
+  <testcase classname="Verify everything" name="TC006 - Verify the created article is visible under global feed and click on article and comment on it and then delete it" time="27.195" />
+  <testcase classname="Verify everything" name="TC007 - Verify the created article is visible under global feed and click on article and delete it" time="25.07" />
  </testsuite>
 </testsuites>
