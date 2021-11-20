@@ -4,5 +4,5 @@ webdriver-manager start on a terminal
 ------------------------------------------------
 protractor tests/e2e/config.js on another terminal
 ------------------------------------------------
-
-
+e2e testing following page object framework
+------------------------------------------------
