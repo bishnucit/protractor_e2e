@@ -6,5 +6,5 @@ protractor tests/e2e/config.js on another terminal
 ------------------------------------------------
 e2e testing following page object framework
 ------------------------------------------------
-Report screenshot - https://pasteboard.co/Hyrxgglyx2YR.png
+Report screenshot - https://pasteboard.co/w0DErphhDeoj.png
 ------------------------------------------------
