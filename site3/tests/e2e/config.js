@@ -41,8 +41,9 @@ exports.config = {
       'browserName': 'chrome'
     },
 
-    specs: ['..//e2e//signin_page//signinpage.spec.js',
-            '..//e2e//signup_page//signuppage.spec.js',],
+    specs: ['..//e2e//signup_page//signuppage.spec.js',
+            '..//e2e//signin_page//signinpage.spec.js',
+            ],
     jasmineNodeOpts: {
       showColors: true
     }
