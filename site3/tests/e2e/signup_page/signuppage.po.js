@@ -6,7 +6,9 @@ var SignUppage = function(){
     this.usernameInput = element(by.css('[ng-reflect-name="username"]'));
     this.emailInput = element(by.css('[ng-reflect-name="email"]'));
     this.passInput = element(by.css('[ng-reflect-name="password"]'));
-    this.signinButton = element(by.buttonText('Sign up'));
+    this.signupButton = element(by.buttonText('Sign up'));
     this.needaccountLink = element(by.linkText('Have an account?'));
+
 };
+
 module.exports = SignUppage;
