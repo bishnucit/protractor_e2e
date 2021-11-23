@@ -1,17 +1,24 @@
 var SignUppage = require('./signuppage.po.js');
 var Homepage = require('../home_page/homepage.po.js');
 var SignInpage = require('../signin_page/signinpage.po.js');
+var SettingsPage = require('../settings_page/settingspage.po.js');
 
 describe("Sign up page tests", function(){
     browser.ignoreSynchronization = true;
-    var today = new Date().getTime();
     var EC = protractor.ExpectedConditions;
     var signUppage = new SignUppage();
     var homepage = new Homepage();
     var signInpage = new SignInpage();
+    var settingspage = new SettingsPage();
     var registerURL = 'http://localhost:4200/register';
     var homeURL = 'http://localhost:4200/';
     var loginURL = 'http://localhost:4200/login';
+    var settingsURL = 'http://localhost:4200/settings';
+    var username = new Date().getTime();
+    var email = username+'@mailinator.com';
+    var password = email;
+
+
 
     beforeAll(function(){
         browser.get(registerURL);
@@ -27,7 +34,7 @@ describe("Sign up page tests", function(){
         expect(signUppage.usernameInput.isDisplayed());
         expect(signUppage.emailInput.isDisplayed());
         expect(signUppage.passInput.isDisplayed());
-        expect(signUppage.signinButton.isDisplayed());
+        expect(signUppage.signupButton.isDisplayed());
         expect(signUppage.needaccountLink.isDisplayed());
         browser.sleep(2000);
     });
@@ -64,4 +71,27 @@ describe("Sign up page tests", function(){
         browser.sleep(2000);
     })
 
+    it("Register a new user", function(){
+        //Register a new user and logout after registered successfully
+        signUppage.usernameInput.sendKeys(username);
+        signUppage.emailInput.sendKeys(email);
+        signUppage.passInput.sendKeys(password);
+        signUppage.signupButton.click()
+        .then(function(){
+            browser.wait(EC.presenceOf(homepage.sidebarLink), 5000);
+            expect(browser.getCurrentUrl()).toEqual(homeURL);
+        });
+        browser.sleep(2000);
+        homepage.settingspageLink.click()
+        .then(function(){
+            expect(browser.getCurrentUrl()).toEqual(settingsURL);
+            browser.sleep(2000);
+        });
+
+        settingspage.logoutButton.click()
+        .then(function(){
+            expect(browser.getCurrentUrl()).toEqual(homeURL);
+            browser.sleep(2000);
+        });
+    })
 });
