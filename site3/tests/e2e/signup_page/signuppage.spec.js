@@ -14,7 +14,8 @@ describe("Sign up page tests", function(){
     var homeURL = 'http://localhost:4200/';
     var loginURL = 'http://localhost:4200/login';
     var settingsURL = 'http://localhost:4200/settings';
-    var username = new Date().getTime();
+    var username = signUppage.username;
+    //console.log("===================================================" + signUppage.username);
     var email = username+'@mailinator.com';
     var password = email;
 
