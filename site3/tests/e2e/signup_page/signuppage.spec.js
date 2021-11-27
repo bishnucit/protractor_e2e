@@ -15,11 +15,8 @@ describe("Sign up page tests", function(){
     var loginURL = 'http://localhost:4200/login';
     var settingsURL = 'http://localhost:4200/settings';
     var username = signUppage.username;
-    //console.log("===================================================" + signUppage.username);
     var email = username+'@mailinator.com';
     var password = email;
-
-
 
     beforeAll(function(){
         browser.get(registerURL);
@@ -70,7 +67,7 @@ describe("Sign up page tests", function(){
         })
         .then(()=>(browser.navigate().back()));
         browser.sleep(2000);
-    })
+    });
 
     it("Register a new user", function(){
         //Register a new user and logout after registered successfully
@@ -94,5 +91,5 @@ describe("Sign up page tests", function(){
             expect(browser.getCurrentUrl()).toEqual(homeURL);
             browser.sleep(2000);
         });
-    })
+    });
 });
