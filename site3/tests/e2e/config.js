@@ -1,3 +1,4 @@
+var username1 = new Date().getTime();
 exports.config = {
 
     onPrepare: function(){
@@ -46,5 +47,10 @@ exports.config = {
             ],
     jasmineNodeOpts: {
       showColors: true
+    },
+
+    //passing global variables through config file
+    params: {
+      username: username1
     }
   };
