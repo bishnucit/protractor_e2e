@@ -1,5 +1,5 @@
 
-var  username, SignUppage = function(){
+var SignUppage = function(){
     this.conduitLink = element(by.partialLinkText('conduit'));
     this.homeLink = element(by.partialLinkText('Home'));
     this.signinLink = element(by.partialLinkText('Sign in'));
@@ -9,8 +9,6 @@ var  username, SignUppage = function(){
     this.passInput = element(by.css('[ng-reflect-name="password"]'));
     this.signupButton = element(by.buttonText('Sign up'));
     this.needaccountLink = element(by.linkText('Have an account?'));
-    this.username = new Date().getTime();
 };
-
 
 module.exports = SignUppage;
