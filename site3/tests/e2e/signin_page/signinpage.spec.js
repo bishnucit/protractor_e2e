@@ -10,7 +10,8 @@ describe("Sign in page tests", function(){
     var signUppage = new SignUppage();
     var homepage = new Homepage();
     var settingspage = new SettingsPage();
-    var username = signUppage.username;
+    //calling global variable declared in config file
+    var username = browser.params.username;
     var email = username+'@mailinator.com';
     var password = email;
     var registerURL = 'http://localhost:4200/register';
@@ -32,6 +33,40 @@ describe("Sign in page tests", function(){
         expect(signInpage.needaccountLink.isDisplayed());
         browser.sleep(2000);
     });
+
+    it("Redirection verification", function(){
+        //click on each link on page and verify the URLs
+        signInpage.conduitLink.click()
+        .then(function(){
+            browser.wait(EC.presenceOf(homepage.sidebarLink), 5000);
+            expect(browser.getCurrentUrl()).toEqual(homeURL);
+        })
+        .then(()=>(browser.navigate().back()));
+        browser.wait(EC.presenceOf(signInpage.emailInput), 5000);
+        browser.sleep(2000);
+        signInpage.signinLink.click()
+        .then(function(){
+            browser.wait(EC.presenceOf(signInpage.signinButton), 5000);
+            expect(browser.getCurrentUrl()).toEqual(loginURL);
+        });
+        browser.sleep(2000);
+        signInpage.signupLink.click()
+        .then(function(){
+            browser.wait(EC.presenceOf(signUppage.signupButton), 5000);
+            expect(browser.getCurrentUrl()).toEqual(registerURL);
+        })
+        .then(()=>(browser.navigate().back()));
+        browser.sleep(2000);
+        signInpage.needaccountLink.click()
+        .then(function(){
+            browser.sleep(2000);
+            browser.wait(EC.presenceOf(signUppage.signupButton), 5000);
+            expect(browser.getCurrentUrl()).toEqual(registerURL);
+        })
+        .then(()=>(browser.navigate().back()));
+        browser.sleep(2000);
+    });
+
 
     it("sign in with a registered user", function(){
         //sign in with a registered user and then logout
