@@ -44,6 +44,7 @@ exports.config = {
 
     specs: ['..//e2e//signup_page//signuppage.spec.js',
             '..//e2e//signin_page//signinpage.spec.js',
+            '..//e2e//settings_page//settingspage.spec.js',
             ],
     jasmineNodeOpts: {
       showColors: true
