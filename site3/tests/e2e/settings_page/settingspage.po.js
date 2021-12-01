@@ -6,5 +6,8 @@ var Settingspage = function(){
     this.passTextBox = element(by.css('[ng-reflect-name="password"]'));
     this.updateButton = element(by.css('.btn-primary.pull-xs-right'));
     this.logoutButton = element(by.css('.btn-outline-danger'));
+    this.conduitLink = element(by.partialLinkText('conduit'));
+    this.homeLink = element(by.partialLinkText('Home'));
+    this.newarticleLink = element(by.css('[href="/editor"]'));
 };
 module.exports = Settingspage;
