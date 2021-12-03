@@ -7,5 +7,6 @@ var SignInpage = function(){
     this.passInput = element(by.css('[ng-reflect-name="password"]'));
     this.signinButton = element(by.buttonText('Sign in'));
     this.needaccountLink = element(by.linkText('Need an account?'));
+    this.errorMessage = element(by.css(".error-messages"));
 };
 module.exports = SignInpage;
