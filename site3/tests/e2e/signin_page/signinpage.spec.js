@@ -90,4 +90,18 @@ describe("Sign in page tests", function(){
             browser.sleep(2000);
         });
     });
+
+
+    it("sign in with a invalid user", function(){
+        //sign in with a invalid user
+        browser.wait(EC.presenceOf(signInpage.emailInput), 5000);
+        signInpage.emailInput.sendKeys("email");
+        signInpage.passInput.sendKeys("password");
+        signInpage.signinButton.click()
+        .then(function(){
+            browser.wait(EC.presenceOf(signInpage.errorMessage), 5000);
+            expect(signInpage.errorMessage.isDisplayed());
+            browser.sleep(4000);
+        });
+    });
 });
