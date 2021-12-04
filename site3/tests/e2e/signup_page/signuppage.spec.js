@@ -70,6 +70,20 @@ describe("Sign up page tests", function(){
         browser.sleep(2000);
     });
 
+    /* it("Register an invalid user", function(){
+        //Register an invalid user
+        signUppage.usernameInput.sendKeys("a");
+        signUppage.emailInput.sendKeys("a");
+        signUppage.passInput.sendKeys("a");
+        signUppage.signupButton.click()
+        .then(function(){
+            browser.wait(EC.presenceOf(signUppage.signupButton), 5000);
+            browser.sleep(7000);
+            expect(signUppage.errorMessage1.isDisplayed());
+            expect(signUppage.errorMessage2.isDisplayed());
+        });
+    }); */
+
     it("Register a new user", function(){
         //Register a new user and logout after registered successfully
         signUppage.usernameInput.sendKeys(username);
@@ -93,4 +107,5 @@ describe("Sign up page tests", function(){
             browser.sleep(2000);
         });
     });
+
 });
