@@ -11,13 +11,15 @@ describe("Sign in page tests", function(){
     var homepage = new Homepage();
     var settingspage = new SettingsPage();
     //calling global variable declared in config file
-    var username = browser.params.username;
+    var username = signInpage.username;
     var email = username+'@mailinator.com';
     var password = email;
     var registerURL = 'http://localhost:4200/register';
     var homeURL = 'http://localhost:4200/';
     var loginURL = 'http://localhost:4200/login';
     var settingsURL = 'http://localhost:4200/settings';
+    console.log("---------------------------------------------------------------"+username);
+
 
 
     beforeEach(function(){
@@ -67,12 +69,24 @@ describe("Sign in page tests", function(){
         browser.sleep(2000);
     });
 
+    // it("sign in with a invalid user", function(){
+    //     //sign in with a invalid user
+    //     browser.wait(EC.presenceOf(signInpage.emailInput), 5000);
+    //     signInpage.emailInput.sendKeys("email");
+    //     signInpage.passInput.sendKeys("password");
+    //     signInpage.signinButton.click()
+    //     .then(function(){
+    //         browser.wait(EC.presenceOf(signInpage.errorMessage), 5000);
+    //         expect(signInpage.errorMessage.isDisplayed());
+    //         browser.sleep(4000);
+    //     });
+    // });
 
     it("sign in with a registered user", function(){
         //sign in with a registered user and then logout
         browser.wait(EC.presenceOf(signInpage.emailInput), 5000);
-        signInpage.emailInput.sendKeys(email);
-        signInpage.passInput.sendKeys(password);
+        signInpage.emailInput.clear().sendKeys(email);
+        signInpage.passInput.clear().sendKeys(password);
         signInpage.signinButton.click()
         .then(function(){
             browser.wait(EC.presenceOf(homepage.sidebarLink), 5000);
@@ -88,20 +102,6 @@ describe("Sign in page tests", function(){
         .then(function(){
             expect(browser.getCurrentUrl()).toEqual(homeURL);
             browser.sleep(2000);
-        });
-    });
-
-
-    it("sign in with a invalid user", function(){
-        //sign in with a invalid user
-        browser.wait(EC.presenceOf(signInpage.emailInput), 5000);
-        signInpage.emailInput.sendKeys("email");
-        signInpage.passInput.sendKeys("password");
-        signInpage.signinButton.click()
-        .then(function(){
-            browser.wait(EC.presenceOf(signInpage.errorMessage), 5000);
-            expect(signInpage.errorMessage.isDisplayed());
-            browser.sleep(4000);
         });
     });
 });
