@@ -1,4 +1,4 @@
-var SignInpage = function(){
+var username, SignInpage = function(){
     this.conduitLink = element(by.partialLinkText('conduit'));
     this.homeLink = element(by.partialLinkText('Home'));
     this.signinLink = element(by.partialLinkText('Sign in'));
@@ -8,5 +8,6 @@ var SignInpage = function(){
     this.signinButton = element(by.buttonText('Sign in'));
     this.needaccountLink = element(by.linkText('Need an account?'));
     this.errorMessage = element(by.css(".error-messages"));
+    this.username = browser.params.username;
 };
 module.exports = SignInpage;
